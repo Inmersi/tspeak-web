@@ -13,7 +13,6 @@ const Home = () => {
     <div>
       <Layout>
         <MainSection />
-        <ClinicSection />
         <div className="flex justify-center items-center my-10">
           <div className="w-full border-t border-gray-300"></div>
         </div>
