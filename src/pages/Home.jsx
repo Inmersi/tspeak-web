@@ -13,6 +13,9 @@ const Home = () => {
     <div>
       <Layout>
         <MainSection />
+        <div className="flex justify-center items-center my-10">
+          <div className="w-full border-t border-gray-300"></div>
+        </div>
         <Support />
         <div className="flex justify-center items-center my-10">
           <div className="w-full border-t border-gray-300"></div>
