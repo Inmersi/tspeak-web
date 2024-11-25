@@ -17,9 +17,6 @@ const Home = () => {
         <div className="flex justify-center items-center my-10">
           <div className="w-full border-t border-gray-300"></div>
         </div>
-        <div className="flex justify-center items-center my-10">
-          <div className="w-full border-t border-gray-300"></div>
-        </div>
         <ItemsGrid />
         <div className="flex justify-center items-center my-10">
           <div className="w-full border-t border-gray-800"></div>
