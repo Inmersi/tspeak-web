@@ -3,7 +3,7 @@ import videoPlay from "../assets/images/video-play.png"; // Your video thumbnail
 
 const Information = () => {
   const [showModal, setShowModal] = useState(false); // State to control the modal visibility
-  const videoUrl = "https://youtu.be/SYT8wjrGw4U"; // Correct YouTube embed URL
+  const videoUrl = "https://www.youtube.com/watch?v=SYT8wjrGw4U"; // Correct YouTube embed URL
 
   const handleClick = () => {
     setShowModal(true); // Show the video modal
