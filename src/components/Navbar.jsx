@@ -9,18 +9,10 @@ const Navbar = () => {
         <ul className="hidden md:flex space-x-6 font-wellfleet">
           <li>
             <a
-              href="#home"
-              className="text-white hover:underline hover:decoration-white focus:underline focus:decoration-white hover:decoration-2 hover:decoration-2px focus:decoration-2 focus:decoration-2px mb-2 transition-all"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
               href="#about"
               className="text-white hover:underline hover:decoration-white focus:underline focus:decoration-white hover:decoration-2 hover:decoration-2px focus:decoration-2 focus:decoration-2px mb-2 transition-all"
             >
-              About
+              Sobre nosotros
             </a>
           </li>
           <li>
@@ -28,7 +20,7 @@ const Navbar = () => {
               href="#features"
               className="text-white hover:underline hover:decoration-white focus:underline focus:decoration-white hover:decoration-2 hover:decoration-2px focus:decoration-2 focus:decoration-2px mb-2 transition-all"
             >
-              Features
+              Características
             </a>
           </li>
           <li>
@@ -36,7 +28,7 @@ const Navbar = () => {
               href="#contact"
               className="text-white hover:underline hover:decoration-white focus:underline focus:decoration-white hover:decoration-2 hover:decoration-2px focus:decoration-2 focus:decoration-2px mb-2 transition-all"
             >
-              Contact
+              Contacto
             </a>
           </li>
         </ul>
