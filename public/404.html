@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tspeak</title>
+    <script>
+      // GitHub Pages no conoce las rutas de la SPA: abrir
+      // /delete-account directamente devuelve este 404 en vez del
+      // index. Guardamos la ruta pedida en la query y saltamos al
+      // index, que la restaura antes de que React monte. Sin esto la
+      // URL solo funciona navegando desde la portada, y Google la abre
+      // directa.
+      var ruta = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace(
+        window.location.origin + "/?redirect=" + encodeURIComponent(ruta)
+      );
+    </script>
+  </head>
+  <body>
+    <p>Redirigiendo…</p>
+  </body>
+</html>

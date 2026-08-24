@@ -42,7 +42,8 @@ const Footer = () => {
           <div>
             <h3 className="mb-4">Soporte</h3>
             <ul className="space-y-2 text-gray-600">
-              <li><a href="future" className="hover:text-black">Política de Privacidad</a></li>
+              <li><a href="/privacy-policy" className="hover:text-black">Política de Privacidad</a></li>
+              <li><a href="/delete-account" className="hover:text-black">Eliminar mi cuenta</a></li>
               <li><a href="future" className="hover:text-black">Preguntas Frecuentes</a></li>
               <li><a href="future" className="hover:text-black">Contáctanos</a></li>
             </ul>
