@@ -1,34 +1,38 @@
 import React from "react";
 import MainSection from "../components/MainSection";
 import Layout from "../components/Layout";
-import ClinicSection from "../components/ClinicSection";
 import ItemsGrid from "../components/ItemsGrid";
 import PricingPlans from "../components/Pricingplans";
 import Information from "../components/Information";
 import Support from "../components/Support";
-import Services from "../components/Services";
+import AvisoImportante from "../components/AvisoImportante";
+import Contacto from "../components/Contacto";
+
+const Separador = ({ fuerte = false }) => (
+  <div className="flex justify-center items-center my-10">
+    <div className={`w-full border-t ${fuerte ? "border-gray-800" : "border-gray-300"}`} />
+  </div>
+);
 
 const Home = () => {
   return (
     <div>
       <Layout>
         <MainSection />
-        <div className="flex justify-center items-center my-10">
-          <div className="w-full border-t border-gray-300"></div>
-        </div>
+        {/* El aviso va arriba, antes de las secciones de venta: quien
+            llega desde la ficha de Google Play tiene que leer que esto
+            no diagnostica ni reemplaza a un profesional. */}
+        <AvisoImportante />
+        <Separador />
         <Support />
-        <div className="flex justify-center items-center my-10">
-          <div className="w-full border-t border-gray-300"></div>
-        </div>
+        <Separador />
         <ItemsGrid />
-        <div className="flex justify-center items-center my-10">
-          <div className="w-full border-t border-gray-800"></div>
-        </div>
+        <Separador fuerte />
         <Information />
-        <div className="flex justify-center items-center my-10">
-          <div className="w-full border-t border-gray-300"></div>
-        </div>
+        <Separador />
         <PricingPlans />
+        <Separador />
+        <Contacto />
       </Layout>
     </div>
   );

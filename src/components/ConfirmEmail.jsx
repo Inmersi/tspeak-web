@@ -2,7 +2,7 @@ import React from "react";
 
 const ConfirmEmail = ({ email }) => {
   return (
-    <div className="bg-cover bg-center" style={{ backgroundImage: "url('/path-to-your-background-image.jpg')" }}>
+    <div>
       <div className="mx-auto  justify-center items-center mt-44">
     <div style={{ padding: "20px", textAlign: "center", minHeight: "50vh" }}>
       <div
