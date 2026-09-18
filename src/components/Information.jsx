@@ -71,10 +71,10 @@ const Information = () => {
         {/* Text Content */}
         <div className="text-center md:text-left md:w-1/2">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Con nuestra funcionalidad exclusiva ofrecemos terapias y aprendizajes a otro nivel
+            Una funcionalidad pensada para que el material acompañe al niño en su día a día
           </h2>
           <p className="text-lg text-gray-600 mb-6 text-justify">
-            Ofrecemos una experiencia única al permitir la reproducción del contenido terapéutico a pantalla completa dentro de la app o durante el uso de otras aplicaciones, optimizando el tiempo de uso del celular.
+            El material que preparó el especialista puede reproducirse a pantalla completa dentro de la app o mientras el niño usa otras aplicaciones, para que el apoyo esté presente sin ocupar más tiempo de pantalla.
           </p>
         </div>
       </div>

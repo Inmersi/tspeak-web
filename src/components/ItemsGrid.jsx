@@ -8,10 +8,10 @@ import feature6 from "../assets/images/feature-6.jpg";
 
 const WhatsNew = () => {
   return (
-    <div className="container mx-auto mt-5 py-16 px-4 sm:px-6 lg:px-8 w-full md:w-8/12">
+    <div id="caracteristicas" className="container mx-auto mt-5 py-16 px-4 sm:px-6 lg:px-8 w-full md:w-8/12">
       {/* Título de la sección */}
       <h2 className="text-4xl font-bold text-center mb-12">
-        ¿Por qué Tspeak?
+        ¿Por qué TSpeak?
       </h2>
 
       {/* Grid de características */}
@@ -21,7 +21,7 @@ const WhatsNew = () => {
         <div>
           <img
             src={feature1}
-            alt="Acceso a contenido terapéutico"
+            alt="Material de apoyo en la app"
             className="w-full h-48 object-cover"
           />
           <div className="p-4 text-center">
@@ -29,7 +29,7 @@ const WhatsNew = () => {
               Integral
             </h3>
             <p className="mt-2 text-gray-600">
-              Accede a contenido terapéutico interactivo para el desarrollo cognitivo, emocional y conductual de los niños.
+              Reúne material interactivo de apoyo en las tres áreas que el especialista suele trabajar: lenguaje, conducta y emociones, y aprendizaje.
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ const WhatsNew = () => {
         <div>
           <img
             src={feature2}
-            alt="Apto para niños con trastornos"
+            alt="Material adaptado por el especialista"
             className="w-full h-48 object-cover"
           />
           <div className="p-4 text-center">
@@ -46,7 +46,7 @@ const WhatsNew = () => {
               Adaptativo
             </h3>
             <p className="mt-2 text-gray-600">
-            Apto para niños con trastornos de neurodesarrollo y dificultades en lenguaje, habilidades emocionales, conducta o aprendizaje.
+            El profesional adapta el material al ritmo de cada niño, incluidos los que necesitan más apoyo en lenguaje, emociones, conducta o aprendizaje.
             </p>
           </div>
         </div>
@@ -80,7 +80,7 @@ const WhatsNew = () => {
              Retroalimentación constante
             </h3>
             <p className="mt-2 text-gray-600">
-              Los padres pueden monitorear el progreso del niño mediante reportes detallados y ajustes personalizados por los profesionales de salud.
+              Los padres pueden seguir la actividad del niño en la app, y el profesional ajusta el material a partir de lo que observa en sus sesiones.
             </p>
           </div>
         </div>
