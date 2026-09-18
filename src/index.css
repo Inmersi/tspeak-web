@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Las dos fuentes viven en el repositorio y se sirven desde nuestro
+   propio dominio. Nada de Google Fonts: esta web acompaña a una app
+   para niños y no queremos que cargar una página avise a un tercero. */
 @font-face {
     font-family: "RamettoOne";
     src: url("./assets/fonts/RammettoOne.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Wellfleet";
+    src: url("./assets/fonts/WellfleetRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
