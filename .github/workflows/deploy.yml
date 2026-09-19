@@ -1,0 +1,74 @@
+name: Desplegar en GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  # Permite relanzar un despliegue a mano desde la pestaña Actions sin
+  # tener que inventar un commit.
+  workflow_dispatch:
+
+# Lo que pide actions/deploy-pages: leer el repositorio y poder pedir el
+# token OIDC con el que GitHub Pages comprueba que el despliegue viene de
+# este workflow y no de otro sitio.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Dos pushes seguidos no se pisan. No cancelamos el que ya esta corriendo:
+# un despliegue interrumpido a medias dejaria el sitio incompleto.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      # npm ci y no npm install: instala exactamente lo que fija
+      # package-lock.json. Sin eso, la actualizacion de una dependencia
+      # transitiva puede cambiar el build sin que nadie toque el repo.
+      # Requiere que package-lock.json este versionado.
+      - run: npm ci
+
+      - run: npm run lint
+
+      - run: npm run build
+
+      # Red de seguridad para el motivo por el que existe este sitio.
+      # /privacy-policy y /delete-account solo responden 200 porque se
+      # compilan como entradas HTML propias (rollupOptions.input en
+      # vite.config.ts). Si alguien toca esa configuracion y dejan de
+      # generarse, GitHub Pages devolveria 404 justo en las dos URLs que
+      # revisa Google. Mejor que falle aqui y no alla.
+      - name: Comprobar que las paginas que exige Google se generaron
+        run: |
+          for archivo in dist/index.html dist/privacy-policy.html \
+                         dist/delete-account.html dist/404.html; do
+            if [ ! -f "$archivo" ]; then
+              echo "::error::Falta $archivo en el build"
+              exit 1
+            fi
+          done
+          echo "Las cuatro paginas estan en dist/."
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
