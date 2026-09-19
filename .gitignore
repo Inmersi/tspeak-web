@@ -36,7 +36,6 @@ coverage/
 *.map
 
 # Archivos de lock de npm/yarn
-package-lock.json
 pnpm-lock.yaml
 
 # Archivos generados por Service Workers
