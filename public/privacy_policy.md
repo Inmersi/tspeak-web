@@ -104,8 +104,8 @@ Después de eliminar una cuenta conservamos únicamente:
 - Un registro de que la eliminación se realizó, con identificadores internos y fechas, sin datos que
   permitan reconstruir quién eras. Existe para poder demostrar que cumplimos con tu solicitud.
 - Las copias de seguridad cifradas del sistema en las que todavía figuren esos datos, hasta que se
-  sobrescriben en su ciclo normal de rotación. Estas copias no se usan para restaurar cuentas
-  eliminadas.
+  sobrescriben en su ciclo normal de rotación, como máximo 70 días después de la eliminación. Estas
+  copias no se usan para restaurar cuentas eliminadas.
 - La documentación que estemos obligados a conservar por ley, durante el plazo que la ley exija.
 
 ## Seguridad

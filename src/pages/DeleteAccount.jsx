@@ -41,8 +41,7 @@ const DeleteAccount = () => {
           <p className="text-gray-900">
             <strong>La eliminación es inmediata y no se puede deshacer.</strong>{" "}
             No hay periodo de gracia ni forma de recuperar la cuenta ni el
-            contenido después de confirmarla. Si quieres conservar tu material,
-            expórtalo desde la aplicación antes de continuar.
+            contenido después de confirmarla.
           </p>
         </div>
 
@@ -52,10 +51,7 @@ const DeleteAccount = () => {
             <li>
               Abre el <em>Menú</em> y entra en <em>Eliminar cuenta</em>.
             </li>
-            <li>
-              Revisa la lista de lo que se va a borrar y exporta tu contenido si
-              lo necesitas.
-            </li>
+            <li>Revisa la lista de lo que se va a borrar.</li>
             <li>Confirma con tu contraseña.</li>
           </ol>
           <p>
@@ -115,8 +111,9 @@ const DeleteAccount = () => {
             <li>
               <strong>Copias de seguridad.</strong> Los datos pueden seguir
               apareciendo en las copias de seguridad cifradas del sistema hasta
-              que se sobrescriben en su ciclo normal de rotación. Estas copias no
-              se usan para restaurar cuentas eliminadas.
+              que se sobrescriben en su ciclo normal de rotación, como máximo 70
+              días después de la eliminación. Estas copias no se usan para
+              restaurar cuentas eliminadas.
             </li>
             <li>
               <strong>Registros de seguridad.</strong> Guardamos un registro de
