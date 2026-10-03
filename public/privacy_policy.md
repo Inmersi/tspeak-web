@@ -1,6 +1,6 @@
 # Política de Privacidad de TSpeak
 
-**Última actualización: 17 de septiembre de 2026**
+**Última actualización: 3 de octubre de 2026**
 
 TSpeak es una aplicación desarrollada por **TSPEAK S.A.C.S.** (Perú). Aquí te explicamos qué datos
 recopilamos cuando usas la aplicación, para qué los usamos, con quién los compartimos y cómo puedes
@@ -20,6 +20,10 @@ tienes cualquier consulta sobre esta política, escríbenos a **privacidad@tspea
 
 Te pedimos tu nombre y tu dirección de correo electrónico para crear tu cuenta, identificarte cuando
 inicias sesión y poder comunicarnos contigo.
+
+Si te registras como profesional, también te pedimos tu número de teléfono y tu DNI. Si registras
+una clínica o institución, te pedimos su RUC y un teléfono de contacto. Usamos estos datos para
+identificar y administrar la cuenta profesional o institucional.
 
 ### Datos de los perfiles de niños
 
@@ -45,6 +49,11 @@ Recopilamos información sobre cómo interactúas con la aplicación: qué funci
 visitas y qué acciones realizas. Esta información nos ayuda a entender qué falla y a mejorar el
 rendimiento y la experiencia de uso.
 
+Para esto usamos Firebase Analytics y Firebase Crashlytics, servicios de Google. Si la aplicación
+falla, se envía un registro del error con información técnica del dispositivo (por ejemplo, el
+modelo, la versión de Android y la versión de la app) y un identificador de la instalación de la
+app. No usamos el identificador de publicidad del dispositivo.
+
 ## Uso de la información
 
 Utilizamos los datos recopilados para los siguientes fines:
@@ -64,8 +73,12 @@ casos:
 
 - Cuando lo exija la ley o cuando sea necesario para proteger nuestros derechos legales.
 - Con proveedores de servicios que trabajan por encargo nuestro para operar la aplicación
-  (por ejemplo, alojamiento y almacenamiento de los datos), y solo en la medida necesaria para que
-  puedan prestar ese servicio.
+  (por ejemplo, alojamiento y almacenamiento de los datos, o el análisis de errores y de uso con
+  Firebase, de Google), y solo en la medida necesaria para que puedan prestar ese servicio.
+- Cuando la aplicación busca automáticamente una imagen de portada para un material, enviamos el
+  texto de búsqueda (por ejemplo, el nombre del material) a Google Translate, para traducirlo, y a
+  Pixabay, para obtener imágenes. Ese texto se envía sin tu nombre, tu correo ni otros datos de tu
+  cuenta.
 - Con las personas con las que tú decides compartir un perfil dentro de la aplicación.
 
 ## Niños y familias
@@ -99,8 +112,9 @@ Después de eliminar una cuenta conservamos únicamente:
 
 Nos comprometemos a proteger tu información personal. Implementamos medidas de seguridad razonables
 para proteger tus datos contra accesos no autorizados, alteraciones, divulgaciones o destrucción.
-Sin embargo, ninguna medida de seguridad es completamente infalible, por lo que no podemos
-garantizar la seguridad absoluta de los datos transmitidos a través de la aplicación.
+La información viaja cifrada (HTTPS) entre la aplicación y nuestros servidores. Sin embargo,
+ninguna medida de seguridad es completamente infalible, por lo que no podemos garantizar la
+seguridad absoluta de los datos transmitidos a través de la aplicación.
 
 ## Tus derechos
 
